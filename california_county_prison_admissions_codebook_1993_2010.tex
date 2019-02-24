@@ -1,0 +1,279 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{}
+    \pretitle{\vspace{\droptitle}}
+  \posttitle{}
+    \author{}
+    \preauthor{}\postauthor{}
+    \date{}
+    \predate{}\postdate{}
+  
+
+\begin{document}
+
+===============================================================================================================
+
+county
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: character
+
+\begin{verbatim}
+   Length:        986  
+    Class:  character  
+     Mode:  character  
+\end{verbatim}
+
+===============================================================================================================
+
+year
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: double
+
+\begin{verbatim}
+      Min.:  1993.000  
+   1st Qu.:  1997.000  
+    Median:  2002.000  
+      Mean:  2001.529  
+   3rd Qu.:  2006.000  
+      Max.:  2010.000  
+\end{verbatim}
+
+===============================================================================================================
+
+state\_county\_fips
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: character
+
+\begin{verbatim}
+   Length:        986  
+    Class:  character  
+     Mode:  character  
+\end{verbatim}
+
+===============================================================================================================
+
+state\_fips\_code
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: character
+
+\begin{verbatim}
+   Length:        986  
+    Class:  character  
+     Mode:  character  
+\end{verbatim}
+
+===============================================================================================================
+
+county\_fips\_code
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: character
+
+\begin{verbatim}
+   Length:        986  
+    Class:  character  
+     Mode:  character  
+\end{verbatim}
+
+===============================================================================================================
+
+total\_admission\_count
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: double
+
+\begin{verbatim}
+      Min.:      0.000  
+   1st Qu.:     68.000  
+    Median:    259.500  
+      Mean:   1078.739  
+   3rd Qu.:    708.750  
+      Max.:  23931.000  
+\end{verbatim}
+
+===============================================================================================================
+
+total\_admission\_percent
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: double
+
+\begin{verbatim}
+      Min.:   0.000  
+   1st Qu.:   0.100  
+    Median:   0.400  
+      Mean:   1.715  
+   3rd Qu.:   1.175  
+      Max.:  38.400  
+\end{verbatim}
+
+===============================================================================================================
+
+total\_rate\_per\_100k\_county\_pop
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: double
+
+\begin{verbatim}
+      Min.:    0.000  
+   1st Qu.:  104.575  
+    Median:  154.750  
+      Mean:  164.622  
+   3rd Qu.:  215.700  
+      Max.:  436.500  
+\end{verbatim}
+
+===============================================================================================================
+
+felon\_new\_admission\_count
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: double
+
+\begin{verbatim}
+      Min.:      0.000  
+   1st Qu.:     56.000  
+    Median:    199.500  
+      Mean:    770.133  
+   3rd Qu.:    528.000  
+      Max.:  16905.000  
+\end{verbatim}
+
+===============================================================================================================
+
+felon\_new\_admission\_percent
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: double
+
+\begin{verbatim}
+      Min.:   0.000  
+   1st Qu.:   0.100  
+    Median:   0.400  
+      Mean:   1.719  
+   3rd Qu.:   1.200  
+      Max.:  37.800  
+\end{verbatim}
+
+===============================================================================================================
+
+parole\_violator\_with\_new\_term\_count
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: double
+
+\begin{verbatim}
+      Min.:     0.000  
+   1st Qu.:    11.000  
+    Median:    53.500  
+      Mean:   308.606  
+   3rd Qu.:   178.750  
+      Max.:  7572.000  
+\end{verbatim}
+
+===============================================================================================================
+
+parole\_violator\_new\_term\_percent
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+Storage mode: double
+
+\begin{verbatim}
+      Min.:   0.000  
+   1st Qu.:   0.100  
+    Median:   0.300  
+      Mean:   1.707  
+   3rd Qu.:   1.000  
+      Max.:  39.800  
+\end{verbatim}
+
+
+\end{document}
